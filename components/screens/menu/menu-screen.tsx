@@ -1,21 +1,15 @@
 import React from 'react';
-import { View, Button } from 'react-native';
-import Text from '../../base/text';
+import { createDrawerNavigator } from '@react-navigation/drawer';
+import DefaultNavigator from '../../../router/navigator';
 
-function HomeScreen({ navigation }) {
+const Drawer = createDrawerNavigator();
+
+function MenuDrawer() {
     return (
-        <View>
-            <Button onPress={() => navigation.navigate('Home')} title="Home" />
-        </View>
+        <Drawer.Navigator>
+            <Drawer.Screen name="Home" component={DefaultNavigator} />
+        </Drawer.Navigator>
     );
 }
 
-const MenuScreen = () => {
-    return (
-        <View>
-            <Text>{'esto es un texto'}</Text>
-        </View>
-    );
-};
-
-export default MenuScreen;
+export default MenuDrawer;

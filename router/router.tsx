@@ -1,10 +1,10 @@
 import React from 'react';
-import DefaultNavigator from './navigator';
+import MenuDrawer from '../components/screens/menu';
 import { NavigationContainer } from '@react-navigation/native';
 const Router = () => {
     return (
         <NavigationContainer>
-            <DefaultNavigator />
+            <MenuDrawer />
         </NavigationContainer>
     );
 };
