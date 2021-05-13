@@ -5,5 +5,5 @@ export const commonTextStyles = StyleSheet.create({
     text: {
         ...textStylesEM.font.regular,
         ...textStylesEM.size.default,
-    }
-})
+    },
+});
